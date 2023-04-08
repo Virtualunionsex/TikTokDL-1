@@ -11,18 +11,18 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 # Configs
-API_HASH = os.environ['API_HASH']
-APP_ID = int(os.environ['APP_ID'])
-BOT_TOKEN = os.environ['BOT_TOKEN']
+API_HASH = os.environ['API_HASH', "29b3ffa9245c07f05375b92f38e8f13d"]
+APP_ID = int(os.environ['APP_ID', "16246834"])
+BOT_TOKEN = os.environ['BOT_TOKEN', "5940961389:AAFuoDsX0JpYKH4l_k8gCZc6yzg6uDsdRCc"]
 downloads = './downloads/{}/'
 
 #Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton("Source", url="https://github.com/X-Gorn/TikTokDL"),
-        InlineKeyboardButton("Project Channel", url="https://t.me/xTeamBots"),
+        InlineKeyboardButton("Source", url="https://github.com/virtualunionsex/TikTokDL"),
+        InlineKeyboardButton("Project Channel", url="https://t.me/nakama_asl"),
     ],
-    [InlineKeyboardButton("Author", url="https://t.me/xgorn")],
+    [InlineKeyboardButton("Author", url="https://t.me/azure_id")],
 ]
 
 DL_BUTTONS=[
